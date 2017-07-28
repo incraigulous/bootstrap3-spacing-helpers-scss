@@ -1,0 +1,70 @@
+// Implementing bootstrap 4 spacing helpers.
+
+@mixin makeSpacingHelpers($size) {
+  $width: $grid-gutter-width/(6 - $size);
+
+  .p-#{$size} {
+    padding: $width;
+  }
+  .pb-#{$size} {
+    padding-bottom: $width;
+  }
+  .pt-#{$size} {
+    padding-top: $width;
+  }
+  .pl-#{$size} {
+    padding-left: $width;
+  }
+  .pr-#{$size} {
+    padding-right: $width;
+  }
+  .px-#{$size} {
+    padding-left: $width;
+    padding-right: $width;
+  }
+  .py-#{$size} {
+    padding-top: $width;
+    padding-bottom: $width;
+  }
+
+  .m-#{$size} {
+    margin: $width;
+  }
+  .mb-#{$size} {
+    margin-bottom: $width;
+  }
+  .mt-#{$size} {
+    margin-top: $width;
+  }
+  .ml-#{$size} {
+    margin-left:$width;
+  }
+  .mr-#{$size} {
+    margin-right: $width;
+  }
+  .mx-#{$size} {
+    margin-left: $width;
+    margin-right: $width;
+  }
+  .my-#{$size} {
+    margin-top: $width;
+    margin-bottom: $width;
+  }
+}
+
+
+@for $size from 1 through 5 {
+  @include makeSpacingHelpers($size);
+}
+
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.ml-auto {
+  margin-left: auto;
+}
+mr-auto {
+  margin-right: auto;
+}
