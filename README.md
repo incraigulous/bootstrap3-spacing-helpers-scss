@@ -8,5 +8,5 @@ See [https://v4-alpha.getbootstrap.com/utilities/spacing/](https://v4-alpha.getb
 **Importing**
 
 ```
-    @import "../../../node_modules/bootstrap3-spacing-helpers/spacing";
+    @import "../../../node_modules/bootstrap3-spacing-helpers-scss/spacing";
 ```
