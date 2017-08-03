@@ -1,14 +1,13 @@
 // Implementing bootstrap 4 spacing helpers.
+$grid-gutter-width: 30 !default;
 
 @mixin makeSpacingHelpers($size) {
 
-  @if $size == 0 {
-    $width: $size;
-  } @else {
+  $width: 0;
+
+  @if $size > 0 {
     $width: $grid-gutter-width/(6 - $size);
   }
-
-  $width: $grid-gutter-width/(6 - $size);
 
   .p-#{$size} {
     padding: $width;
