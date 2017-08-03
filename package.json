@@ -1,6 +1,6 @@
 {
   "name": "bootstrap3-spacing-helpers-scss",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Bootstrap 4 spacing helpers for bootstrap 3 sass. ",
   "main": "src/spacing.scss",
   "repository": "https://github.com/incraigulous/bootstrap3-spacing-helpers-scss",
